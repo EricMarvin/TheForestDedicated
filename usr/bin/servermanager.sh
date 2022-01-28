@@ -56,6 +56,7 @@ function startVirtualScreenAndRebootWine() {
 
 function installServer() {
     # force a fresh install of all
+    #setupWineInBashRc
     isWineinBashRcExistent
     steamcmdinstaller.sh
     mkdir -p $SAVEGAME_PATH $CONFIG_PATH
@@ -76,12 +77,12 @@ function startServer() {
 }
 
 function startMain() {
+	ip all
     # Check if server is installed, if not try again
-    if [ ! -f "/theforest/TheForestDedicatedServer.exe" ]; then
+    #if [ ! -f "/theforest/TheForestDedicatedServer.exe" ]; then
         installServer
-    fi
+    #fi
     startServer
-ls /winedata
     mv /Assembly-CSharp.dll /theforest/TheForestDedicatedServer_Data/Managed/
 }
 
