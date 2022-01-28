@@ -14,7 +14,7 @@ services:
       - /srv/tfds/steamcmd:/steamcmd
       - /srv/tfds/game:/theforest
 
-networks:
-  default:
-    external:
-      name: localdev
+#networks:
+#  default:
+#    external:
+#      name: localdev
