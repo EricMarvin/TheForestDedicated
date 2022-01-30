@@ -13,7 +13,7 @@ ENV WINEPREFIX=/winedata/WINE64 \
 
 VOLUME ["/theforest", "/steamcmd"]
 
-EXPOSE 8766/tcp 8766/udp 27015/tcp 27015/udp 27016/tcp 27016/udp
+EXPOSE 8766/udp 8766/tcp 27015/udp 27015/tcp 27016/udp 27016/tcp
 
 RUN dpkg --add-architecture i386 \
     && apt-get update \

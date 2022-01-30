@@ -77,13 +77,12 @@ function startServer() {
 }
 
 function startMain() {
-	ip all
     # Check if server is installed, if not try again
     #if [ ! -f "/theforest/TheForestDedicatedServer.exe" ]; then
         installServer
     #fi
-    startServer
     mv /Assembly-CSharp.dll /theforest/TheForestDedicatedServer_Data/Managed/
+    startServer
 }
 
 startMain

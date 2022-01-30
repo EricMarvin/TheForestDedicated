@@ -1,6 +1,6 @@
 // Dedicated Server Settings.
 // Server IP address - Note: If you have a router, this address is the internal address, and you need to configure ports forwarding
-serverIP 0.0.0.0
+serverIP 192.168.0.44
 // Steam Communication Port - Note: If you have a router you will need to open this port.
 serverSteamPort 8766
 // Game Communication Port - Note: If you have a router you will need to open this port.

@@ -10,10 +10,10 @@ services:
       - 27015:27015/udp
       - 27016:27016/tcp
       - 27016:27016/udp
+    #network_mode: host
     volumes:
       - /srv/tfds/steamcmd:/steamcmd
       - /srv/tfds/game:/theforest
-
 #networks:
 #  default:
 #    external:
